@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "539024615105",
+    "firebase_url": "https://aditya-3d2ae.firebaseio.com",
+    "project_id": "aditya-3d2ae",
+    "storage_bucket": "aditya-3d2ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539024615105:android:1578dcfee0be415f899640",
+        "android_client_info": {
+          "package_name": "com.aditya.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539024615105-u0naksmdtibu0uku56921mdan5lqnaq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNDmHJEgwN8UN8-aub3YmTMYhAyxa0YvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539024615105-u0naksmdtibu0uku56921mdan5lqnaq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
