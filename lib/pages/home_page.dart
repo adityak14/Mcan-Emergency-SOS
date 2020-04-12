@@ -127,7 +127,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _locationMessage = "${position.latitude}, ${position.longitude}";
       _showModalSheet(position.latitude,position.longitude);
-      _launchURL(position.latitude,position.longitude);
+     //_launchURL(position.latitude,position.longitude);
     });
 
   }
@@ -143,11 +143,21 @@ class _HomePageState extends State<HomePage> {
 
   
  
-  void _showModalSheet(double a,double b) {
+  void _showModalSheet(a, b) {
     showModalBottomSheet(context: context, builder: (builder) {
-      return Container(
-        child: Text('Your Location is: $_locationMessage'),
+      return Column(
+        children:<Widget>[
+          Container(
+          child: Text('Your Location Coordinates are:${a}, ${b} '),
         padding: EdgeInsets.all(40.0),
+        ),
+          Container(
+          child: InkWell(
+              child: new Text('Open Location in Google Maps', style: TextStyle(fontWeight: FontWeight.bold,),),
+              onTap: () => _launchURL(a,b)
+          ),
+        padding: EdgeInsets.all(40.0),
+        ),]
       );
     });
   }
