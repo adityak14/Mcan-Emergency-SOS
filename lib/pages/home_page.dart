@@ -224,7 +224,7 @@ class _HomePageState extends State<HomePage> {
             content: new Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                new Expanded(
+                new Container(
                     child: new TextField(
                   controller: _textEditingController,
                   autofocus: true,
@@ -233,7 +233,7 @@ class _HomePageState extends State<HomePage> {
                   
                   ),
                 )),
-                new Expanded(
+                new Container(
                     child: new TextField(
                   controller: _textEditingController1,
                   autofocus: true,
