@@ -127,10 +127,19 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _locationMessage = "${position.latitude}, ${position.longitude}";
       _showModalSheet(position.latitude,position.longitude);
+      _launchURL(position.latitude,position.longitude);
     });
 
   }
 
+  _launchURL(long, lat) async {
+  String url = 'https://www.google.com/maps/search/?api=1&query=${long},${lat}';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
 
   
  
