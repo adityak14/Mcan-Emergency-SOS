@@ -127,7 +127,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _locationMessage = "${position.latitude}, ${position.longitude}";
       _showModalSheet(position.latitude,position.longitude);
-     //_launchURL(position.latitude,position.longitude);
+     
     });
 
   }
@@ -157,7 +157,18 @@ class _HomePageState extends State<HomePage> {
               onTap: () => _launchURL(a,b)
           ),
         padding: EdgeInsets.all(40.0),
-        ),]
+        ),
+         Container(
+          child: RaisedButton(
+          onPressed: () {},
+          child: const Text(
+            'Broadcast Location',
+            style: TextStyle(fontSize: 20, color: Colors.white)
+          ),
+          color: Colors.deepOrangeAccent,
+        ),
+        ),
+        ]
       );
     });
   }
@@ -305,7 +316,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text('Emergency Notifier'),
+          title: new Text('Emergency SOS'),
           backgroundColor: Colors.deepOrangeAccent,
           actions: <Widget>[
             new IconButton(
