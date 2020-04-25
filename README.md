@@ -1,2 +1,1 @@
 # Mcan-notifier
-![](mcan.gif)
